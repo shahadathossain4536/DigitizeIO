@@ -1,0 +1,25 @@
+.backgroundImg{
+    /* background-image: url(../../assets/img/backgroundImgBanner.png); */
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* height: max-content; */
+    /* width: 100%; */
+}
+.backgroundImgSubscribe{
+    background-image: url(../../../assets//Base1.png);
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.backgroundImgFaq{
+    background-image: url(../../../assets/Base.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: max-content;
+    
+}

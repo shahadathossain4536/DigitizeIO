@@ -5,7 +5,7 @@ const Navbar = () => {
   const menuItem = (
     <>
       <li>
-        <a>Home</a>
+        <Link to="/">Home</Link>
       </li>
       <li tabIndex={0}>
         <a className="justify-between">
@@ -20,7 +20,7 @@ const Navbar = () => {
             <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
           </svg>
         </a>
-        <ul className="p-2">
+        <ul className="p-2 bg-slate-100">
           <li>
             <a>Submenu 1</a>
           </li>
@@ -30,7 +30,7 @@ const Navbar = () => {
         </ul>
       </li>
       <li>
-        <a>About Us</a>
+        <Link to="/about">About Us</Link>
       </li>
       <li>
         <a>Products</a>

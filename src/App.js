@@ -8,6 +8,7 @@ import Login from "./component/Pages/Auth/Login";
 import Reg from "./component/Pages/Auth/Reg";
 import NotFound from "./component/Pages/Shared/NotFound";
 import ForgetPassword from "./component/Pages/Auth/ForgetPassword";
+import Contact from "./component/Pages/Contact/Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/login" element={<Login />}></Route>
       <Route path="/reg" element={<Reg />}></Route>
       <Route path="/forgetPassword" element={<ForgetPassword />}></Route>
+      <Route path="/contact" element={<Contact />}></Route>
       <Route path="/*" element={<NotFound />}></Route>
     </Routes>
   );

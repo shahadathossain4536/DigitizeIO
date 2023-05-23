@@ -1,5 +1,6 @@
 import React from "react";
-
+import { IoArrowForwardOutline } from "react-icons/io5";
+import banner from "../../../assets/bg-style2.png";
 const Hero = () => {
   return (
     <section>
@@ -8,13 +9,15 @@ const Hero = () => {
           <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
             <img
               alt="Party"
-              src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-              class="absolute inset-0 h-full w-full object-cover"
+              src={banner}
+              class="absolute inset-0"
             />
           </div>
 
           <div class="lg:py-24">
-            <h2 class="text-3xl font-bold sm:text-4xl">Grow your audience</h2>
+            <h2 class="text-3xl font-bold sm:text-4xl">
+              Full digitalization cycle gor your business
+            </h2>
 
             <p class="mt-4 text-gray-600">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui
@@ -23,12 +26,25 @@ const Hero = () => {
               repellat.
             </p>
 
-            <a
-              href="#"
-              class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
-            >
-              Get Started Today
-            </a>
+            <div className="my-4 flex justify-around items-center bg-slate-200 p-3 rounded-lg">
+              <input
+                class="w-2/6 h-12 border-slate-200 border-2 rounded-md mx-1 px-2 outline-none"
+                type="email"
+                placeholder="Your Email"
+              />
+              <select class="select select-bordered border-slate-200 border-2 w-2/6 outline-none">
+                <option disabled selected>
+                  Who shot first?
+                </option>
+                <option>Han Solo</option>
+                <option>Greedo</option>
+              </select>
+              <button className="rounded-full w-10 h-10 bg-amber-500 flex justify-center items-center">
+                <p className="text-2xl font-bold text-white">
+                  <IoArrowForwardOutline />
+                </p>
+              </button>
+            </div>
           </div>
         </div>
       </div>

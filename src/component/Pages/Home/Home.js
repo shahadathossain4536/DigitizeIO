@@ -10,15 +10,24 @@ import Section from "./Section";
 import Features from "./Features";
 import Team from "./Team";
 import Contact from "./Contact";
+import Header from "../Header/Header";
+import DevelopmentProcess from "./DevelopmentProcess";
+import ContactUs from "./ContactUs";
+import Solutions from "./Solutions";
 
 const Home = () => {
   return (
     <div>
+      <Header />
       <Navbar />
-      <Banner />
+
       <Hero />
+      <ContactUs />
       <Section />
       {/* <Features /> */}
+
+      <DevelopmentProcess />
+      <Solutions />
       <Testimonials />
       <Team />
       <Faq />
